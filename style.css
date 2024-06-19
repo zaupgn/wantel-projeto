@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'font1';
+    src:url(font/LilitaOne-Regular.ttf) format(truetype);
+
+}
+
+* {
+    margin: 0px;
+    
+}
+
+header > nav {
+    display: block;
+    background: url(image/img1.png) top center fixed;
+    background-size: cover;
+    padding-left:20px;
+}
+
+img { 
+    width: 100px;
+}
+
+
+
+div#fora {
+    height: 40vh;;
+    background: url(image/img1.png) center center fixed;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0px -1px 4px 0px black;
+}
+
+div#dentro {
+    background: url(image/img2b.png) no-repeat;
+    height: 40vh;
+    position: relative;
+    left:30%;
+    top:0%;
+}
