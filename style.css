@@ -7,21 +7,19 @@
 
 * {
     margin: 0px;
-    
 }
+
+/*Abaixo são os códigos da área header*/
 
 header > nav {
-    display: block;
-    background: url(image/img1.png) top center fixed;
-    background-size: cover;
-    padding-left:20px;
+    background: url(image/img1.png);
+    padding: 5px 0px 1px 20px;
+    border: 0,1px solid rgba(0, 0, 0, 0.356);
 }
 
-img { 
+header > nav > a > img { 
     width: 100px;
 }
-
-
 
 div#fora {
     height: 40vh;;
@@ -38,3 +36,6 @@ div#dentro {
     left:30%;
     top:0%;
 }
+
+
+
