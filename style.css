@@ -4,9 +4,12 @@
     src:url(font/LilitaOne-Regular.ttf) format(truetype);
 
 }
-
 * {
     margin: 0px;
+}
+
+body {
+    background-color: gray;
 }
 
 /*Abaixo são os códigos da área header*/
@@ -26,7 +29,7 @@ nav > a > img {
 }
 
 div#fora {
-    height: 40vh;
+    height: 50vh;
     background-image: url(image/img1b.png);
     background-position: center top;
     background-size: cover;
@@ -38,9 +41,12 @@ div#fora > img {
     height: 40vh;
     background-size: cover;
     position: relative;
-    left: 50%;
-    top: 0%;
+    left: 40%;
+    top: 20%;
 }
+
+
+
 
 
 
