@@ -11,30 +11,35 @@
 
 /*Abaixo são os códigos da área header*/
 
-header > nav {
-    background: url(image/img1.png);
-    padding: 5px 0px 1px 20px;
-    border: 0,1px solid rgba(0, 0, 0, 0.356);
+nav {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    padding: 3px 0px 0px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    position: absolute;
 }
 
-header > nav > a > img { 
+nav > a > img { 
+    display: inline-block;
     width: 100px;
+    padding-right: 110px;
 }
 
 div#fora {
-    height: 40vh;;
-    background: url(image/img1.png) center center fixed;
+    height: 40vh;
+    background-image: url(image/img1b.png);
+    background-position: center top;
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
     box-shadow: inset 0px -1px 4px 0px black;
 }
 
-div#dentro {
-    background: url(image/img2b.png) no-repeat;
+div#fora > img {
     height: 40vh;
+    background-size: cover;
     position: relative;
-    left:30%;
-    top:0%;
+    left: 50%;
+    top: 0%;
 }
 
 
