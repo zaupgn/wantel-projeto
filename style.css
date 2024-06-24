@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
 
 /*Abaixo são os códigos da área header*/
@@ -24,38 +24,84 @@ nav {
 
 nav > a > img { 
     display: inline-block;
-    height: 5vh;
+    height: 4vh;
     position: absolute;
     left: 5%;
     top: 27%;
     padding: 3px 110px 3px 20px;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.11);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.336);
 }
 
 div#fora {
-    height: 45vh;
-    background-image: url(image/img1b.png);
-    background-position: center top;
+    height: 40vh;
+    background-image: url(image/img1c.png);
+    background-position: right bottom;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: inset 0px -1px 4px 0px black;
+    box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.342);
 }
 
 div#fora > img {
-    height: 40vh;
+    height: 35vh;
     position: absolute;
-    left: 40%;
+    left: 50%;
     top: 5%;
+}
+
+main {
+    height: 700px;
+}
+
+main  div {
+    display: inline-block;
+    width: auto;
+    margin: 0px 15px 20px 20px;
+    padding-left: 10px;
+    background-color: rgb(9, 80, 18);
+    border: 1px solid black;
 
 }
 
-div#fora > a > img.text {
-    height: 8vh;
-    position: absolute;
-    left: 5%;
-    top: 27%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin:0px;
+    padding: 5px 0px 5px 0px;
+    background: #000000da;
+    background-size: cover;
+    box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.356);
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;  
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    
 }
 
+footer > a > img { 
+    width: 70px;
+    padding-bottom: 2px;
+}
 
 
 
