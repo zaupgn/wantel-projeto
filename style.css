@@ -32,7 +32,7 @@ nav > a > img {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.336);
 }
 
-div#fora {
+div#cabeçalho {
     height: 40vh;
     background-image: url(image/img1c.png);
     background-position: right bottom;
@@ -41,7 +41,7 @@ div#fora {
     box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.342);
 }
 
-div#fora > img {
+div#cabeçalho > img {
     height: 35vh;
     position: absolute;
     left: 50%;
@@ -52,16 +52,25 @@ main {
     height: 700px;
 }
 
-main  div {
-    display: inline-block;
-    width: auto;
-    margin: 0px 15px 20px 20px;
-    padding-left: 10px;
-    background-color: rgb(9, 80, 18);
-    border: 1px solid black;
+aside {
 
 }
 
+aside > h1 {
+    background: url(image/Design\ sem\ nome.png) no-repeat center center;
+    margin:0px 10px;
+    padding: 2px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0px 5px 5px 0px;
+
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+
+
+} 
 
 
 
