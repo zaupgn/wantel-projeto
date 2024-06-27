@@ -36,6 +36,7 @@ nav > a > img {
 
 #cabeçalho {
     height: 40vh;
+    width: 98vw;
     background-image: url(image/img1c.png);
     background-position: right bottom;
     background-size: cover;
