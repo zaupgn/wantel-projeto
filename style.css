@@ -4,6 +4,7 @@
     src:url(font/LilitaOne-Regular.ttf) format(truetype);
 
 }
+
 * {
     margin: 0px;
 }
@@ -12,7 +13,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-/*Abaixo são os códigos da área header*/
+/*Abaixo são os estilos da área header*/
 
 nav {
     display: inline-block;
@@ -20,6 +21,7 @@ nav {
     padding: 3px 0px 0px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.116);
     position: absolute;
+    
 }
 
 nav > a > img { 
@@ -32,7 +34,7 @@ nav > a > img {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.336);
 }
 
-div#cabeçalho {
+#cabeçalho {
     height: 40vh;
     background-image: url(image/img1c.png);
     background-position: right bottom;
@@ -41,71 +43,62 @@ div#cabeçalho {
     box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.342);
 }
 
-div#cabeçalho > img {
+#cabeçalho > img {
     height: 35vh;
     position: absolute;
     left: 50%;
     top: 5%;
 }
 
+/*Abaixo são os estilos da área mai*/
+
 main {
     height: 700px;
 }
 
-aside {
-
+#area03 {
+    background: linear-gradient(to bottom, #ffffff,#ffffff);
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
-
-aside {
-    background: rgba(0, 0, 0, 0.705) no-repeat center center;
-
-    padding: 2px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 3px;
-} 
 
 aside {
     display: flex;
     justify-content: center;
+    flex-direction: rom;
+    flex-wrap: wrap;  
 }
 
-aside > h1 { 
-    display: none;
+div h1 { 
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: lighter;
+    padding: 0px 0px 10px 0px;
 }
+
 
 aside > div {
-    width: 230px;
-    height: 120px;
-    background-color: green;
-    border: 1px solid black;
-    padding: 2px 0px 2px 8px;
-    margin-left: 10px
+    width: 200px;
+    max-height: 130px;
+
+    background-color: rgba(85, 84, 84, 0);
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    border-radius: 10px;
+    padding: 2px 0px 4px 8px;
+    margin-left: 10px;
+    margin: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: lighter;
+    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Abaixo são os códigos da área footer*/
+/*Abaixo são os estilos da área footer*/
 
 footer {
     margin:0px;
