@@ -56,31 +56,36 @@ aside {
 
 }
 
-aside > h1 {
-    background: url(image/Design\ sem\ nome.png) no-repeat center center;
-    margin:0px 10px;
+aside {
+    background: rgba(0, 0, 0, 0.705) no-repeat center center;
+
     padding: 2px;
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 3px;
+} 
 
-    font-size: 25px;
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+aside > h1 { 
+    display: none;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: lighter;
+}
 
-
-} 
-
-
-
-
-
-
-
-
-
-
+aside > div {
+    width: 230px;
+    height: 120px;
+    background-color: green;
+    border: 1px solid black;
+    padding: 2px 0px 2px 8px;
+    margin-left: 10px
+}
 
 
 
@@ -91,6 +96,16 @@ aside > h1 {
 
 
 
+
+
+
+
+
+
+
+
+
+/*Abaixo são os códigos da área footer*/
 
 footer {
     margin:0px;
