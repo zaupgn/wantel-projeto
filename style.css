@@ -36,7 +36,6 @@ nav > a > img {
 
 #cabeçalho {
     height: 40vh;
-    width: 98vw;
     background-image: url(image/img1c.png);
     background-position: right bottom;
     background-size: cover;
@@ -51,18 +50,15 @@ nav > a > img {
     top: 5%;
 }
 
-/*Abaixo são os estilos da área mai*/
+/*Abaixo são os estilos da área main*/
 
 main {
-    height: 700px;
+    height: 700px; 
 }
-
 #area03 {
-    background: linear-gradient(to bottom, #ffffff,#ffffff);
-    border: 1px solid rgba(0, 0, 0, 0.11);
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
     padding-bottom: 20px;
-    margin-bottom: 10px;
+    margin: 20px 0px 10px 0px;
 }
 
 aside {
@@ -72,31 +68,44 @@ aside {
     flex-wrap: wrap;  
 }
 
-div h1 { 
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-    padding: 0px 0px 10px 0px;
-}
-
-
 aside > div {
     width: 200px;
     max-height: 130px;
-
-    background-color: rgba(85, 84, 84, 0);
+    background-color: rgba(177, 177, 177, 0.055);
     border: 1px solid rgba(0, 0, 0, 0.041);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 2px 0px 4px 8px;
     margin-left: 10px;
     margin: 5px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
-    font-weight: lighter;
-    
+    font-weight: lighter;  
+}
+
+aside > div:hover {
+    background-color: rgba(6, 153, 6, 0.048);
+}
+
+div p.tittle01 { 
+     padding: 5px 0px 0px 0px;
+
+    font-size: clamp(13px, 2.3vw, 15px);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(5, 39, 7);
+}
+
+#area03 div > img {
+    height: 35px;
+
+    position: relative;
+}
+
+div > p.title02 {
+    color: rgb(5, 49, 8);
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 /*Abaixo são os estilos da área footer*/
@@ -113,7 +122,6 @@ footer {
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: lighter;
-    
 }
 
 footer > a > img { 
