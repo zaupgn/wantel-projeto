@@ -14,7 +14,6 @@ body {
 }
 
 /*Abaixo são os estilos da área header*/
-
 nav {
     display: inline-block;
     background: rgba(0, 0, 0, 0);
@@ -51,10 +50,40 @@ nav > a > img {
 }
 
 /*Abaixo são os estilos da área main*/
-
 main {
-    height: 700px; 
+    height: 1000px; 
 }
+
+.tittle01 {
+    font-size: clamp(13px, 2.3vw, 15px);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(5, 39, 7);
+    margin: 20px 0px 10px 0px;
+}   
+
+.area02 {
+    display: flex;
+    justify-content: center;
+    flex-direction: rom;
+    flex-wrap: wrap;
+}
+
+.area02 > div {
+    width: 220px;
+    height: 400px;
+    background-color: rgb(195, 233, 206);
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    border-radius: 5px;
+    padding: 2px 0px 4px 8px;
+    margin-left: 10px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: lighter;  
+}
+
+/*Abaixo são os estilos da área aside*/
 #area03 {
     background-color: rgb(255, 255, 255);
     padding-bottom: 20px;
@@ -70,14 +99,12 @@ aside {
 
 aside > div {
     width: 200px;
-    max-height: 130px;
     background-color: rgba(177, 177, 177, 0.055);
     border: 1px solid rgba(0, 0, 0, 0.041);
     border-radius: 5px;
     padding: 2px 0px 4px 8px;
     margin-left: 10px;
     margin: 5px;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
     font-weight: lighter;  
@@ -87,18 +114,8 @@ aside > div:hover {
     background-color: rgba(6, 153, 6, 0.048);
 }
 
-div p.tittle01 { 
-     padding: 5px 0px 0px 0px;
-
-    font-size: clamp(13px, 2.3vw, 15px);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: rgb(5, 39, 7);
-}
-
 #area03 div > img {
     height: 35px;
-
     position: relative;
 }
 
@@ -109,7 +126,6 @@ div > p.title02 {
 }
 
 /*Abaixo são os estilos da área footer*/
-
 footer {
     margin:0px;
     padding: 5px 0px 5px 0px;
