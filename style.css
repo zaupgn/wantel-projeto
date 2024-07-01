@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family:'font1';
-    src:url(font/LilitaOne-Regular.ttf) format(truetype);
+    src:url(font/Poppins-Light.ttf) format(truetype);
 
 }
 
@@ -25,12 +25,12 @@ nav {
 
 nav > a > img { 
     display: inline-block;
-    height: 4vh;
+    height: 3vh;
     position: absolute;
     left: 5%;
     top: 27%;
     padding: 3px 110px 3px 20px;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.336);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.192);
 }
 
 #cabeçalho {
@@ -58,7 +58,7 @@ main {
     font-size: clamp(13px, 2.3vw, 15px);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: rgb(5, 39, 7);
+    color: rgb(0, 0, 0);
     margin: 20px 0px 10px 0px;
 }   
 
@@ -70,18 +70,87 @@ main {
 }
 
 .area02 > div {
-    width: 220px;
+    width: 210px;
     height: 400px;
-    background-color: rgb(195, 233, 206);
-    border: 1px solid rgba(0, 0, 0, 0.041);
-    border-radius: 5px;
-    padding: 2px 0px 4px 8px;
+
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 2px;
+    padding: 2px 8px 4px 8px;
     margin-left: 10px;
     margin: 5px;
+}
+
+div > p, a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
-    font-weight: lighter;  
+    color: rgb(0, 0, 0);
 }
+
+.valor01 {
+    font-family: 'font1';
+    font-size: clamp(30px, 2.3vw, 15px);
+    color: rgb(0, 0, 0);
+}
+.valor02 {
+    font-family: 'font1';
+    font-size: clamp(4em, 2.3vw, 15px);
+    color: rgb(0, 0, 0);
+}
+.valor03 {
+    font-family: 'font1';
+    font-size: clamp(1em, 2.3vw, 15px);
+    color: rgb(0, 0, 0);
+}
+
+
+
+div > .text01 {
+    margin-bottom: 120px;
+}
+div > .text02 {
+    margin-bottom: 120px;
+}
+div > .text03 {
+    margin-bottom: 103px;
+}
+div > .text04 {
+    margin-bottom: 85px;
+}
+
+.bottom a {
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Abaixo são os estilos da área aside*/
 #area03 {
@@ -124,6 +193,16 @@ div > p.title02 {
     font-weight: 500;
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*Abaixo são os estilos da área footer*/
 footer {
