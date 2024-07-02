@@ -50,9 +50,7 @@ nav > a > img {
 }
 
 /*Abaixo são os estilos da área main*/
-main {
-    height: 1000px; 
-}
+
 
 .tittle01 {
     font-size: clamp(13px, 2.3vw, 15px);
@@ -102,8 +100,6 @@ div > p, a {
     color: rgb(0, 0, 0);
 }
 
-
-
 div > .text01 {
     margin-bottom: 120px;
 }
@@ -125,10 +121,32 @@ div > .text04 {
     padding: 10px 0px;
 }
 
+/**/
+
+section.a02 {
+    display: flex;
+    flex-direction: rom;
+    flex-wrap: wrap;
+    background-color: rgb(95, 160, 106);
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.a02 img {
+    height:50vh;
+    position: relative;
+    top: -18%;
+} 
+
+.a02 div {
+    font-size: clamp(13px, 1.3vw, 15px);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: 350px;
+    margin: 10px;
 
 
 
-
+}
 
 
 
