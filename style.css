@@ -9,6 +9,7 @@
     margin: 0px;
 }
 
+
 /*Abaixo são os estilos da área header*/
 nav {
     display: inline-block;
@@ -31,11 +32,11 @@ nav > a > img {
 
 #cabeçalho {
     height: 40vh;
-    background-color: rgb(6, 85, 16);
+    background-color: #51B432;
     background-position: right bottom;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.342);
+    box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     margin-bottom: 20px;
 }
 
@@ -58,7 +59,7 @@ nav > a > img {
     
     nav > a > img { 
         display: inline-block;
-        height: 2.5vh;
+        height: 3vh;
         position: absolute;
         left: 5%;
         top: 27%;
@@ -68,7 +69,7 @@ nav > a > img {
     
     #cabeçalho {
         height: 40vh;
-        background-image: url(image/img1c.png);
+        background-color: #51B432;
         background-position: right bottom;
         background-size: cover;
         background-attachment: fixed;
@@ -176,12 +177,15 @@ div > .paragraph-4 {
 #menu-router {
     display: flex;
     justify-content: center;
-    background-color: rgb(6, 85, 16);
-    box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.342);
-
+    background-color: #51B432;
+    box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.137);
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
     color: white;
+    padding: 5px 5px;
+    
+
 }
 
 .container {
@@ -192,8 +196,7 @@ div > .paragraph-4 {
     margin: 0px;
     flex-wrap: nowrap;
     gap: 10px; /* Espaço entre os elementos */
-    padding: 5px;
-
+    padding: 0px 5px;
 }
 
 .slideshow-container {
@@ -202,6 +205,7 @@ div > .paragraph-4 {
     margin: auto;
     overflow: hidden;
     flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
+
 }
 
 .mySlides {
@@ -212,60 +216,110 @@ div > .paragraph-4 {
 .mySlides > img {
     width: 100%;
     height: auto;
-    max-width: 450px;  /* Tamanho máximo de 500px */
-    min-width: 300px;  /* Tamanho mínimo de 300px */
+    max-width: 400px; 
+    min-width: 300px;  
     display: block;
-
+    padding: 0px 5px;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
     max-width: 500px;
-    min-width: 300px; 
+    min-width: 300px;
 }
 
-.sub-tittle-router {
-    background-color: rgba(0, 0, 0, 0.205);
-    padding: 5px;
+.text-container > .sub-tittle-router {
+    background-color: rgba(0, 0, 0, 0.082);
     font-weight: bolder;
-
+    border-radius: 5px;
+    padding: 4px 10px;
 }
 
 .text-container > p {
-    text-align: left;
-    margin-bottom: 8px;            
+    padding: 8px 3px; 
+    text-align: left;     
 }
 
+.slideshow-container-2 > img {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
+
+    height: auto;
+    max-width: 170px;  /* Tamanho máximo de 500px */
+    top: 43px;
+    left: 200px;
+}
+
+@media (max-width: 1880px) {
+    .slideshow-container-2 > img {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
+    
+        height: auto;
+        max-width: 170px;  /* Tamanho máximo de 500px */
+        top: 39px;
+        left: 390px;
+    }
+
+}
+
+@media (max-width: 1680px) {
+    .slideshow-container-2 > img {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
+    
+        height: auto;
+        max-width: 170px;  /* Tamanho máximo de 500px */
+        top: 39px;
+        left: 200px;
+    }
+    }
+
+}
+
+
 @media (max-width: 610px) {
+    #menu-router {
+        display: block;
+    }
+    
     .container {
         flex-direction: column; /* Alinhar os elementos em coluna para telas menores */
-        align-items: center;
-        padding: 5px auto;
-    }
-
-    .text-container {
-        max-width: 450px;
-        min-width: 200px;
-        justify-content: center;
-        margin: auto;
-    }
-
-    .text-container p {
-    padding: 10px 5px; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(12px, 2vw, 14px);
-    text-align: justify;   
     }
 
     .mySlides > img {
         max-width: 450px;
-        min-width: 200px;
+        min-width: 100px;
     }
+
+    .slideshow-container-2 > img {
+        display: none;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
