@@ -227,7 +227,7 @@ div > .paragraph-4 {
     flex-direction: column;
     justify-content: center;
     flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
-    max-width: 500px;
+    max-width: 400px;
     min-width: 300px;
 }
 
@@ -236,10 +236,11 @@ div > .paragraph-4 {
     font-weight: bolder;
     border-radius: 5px;
     padding: 4px 10px;
+    max-width: 370px;
 }
 
 .text-container > p {
-    padding: 8px 3px; 
+    padding: 5px 3px; 
     text-align: left;     
 }
 
@@ -249,46 +250,41 @@ div > .paragraph-4 {
     margin: auto;
     overflow: hidden;
     flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
+    left: 150px;
+    top: 41px;
 
+    display: none;
+    width: 100%;
+
+    width: 50%;
     height: auto;
-    max-width: 170px;  /* Tamanho máximo de 500px */
-    top: 43px;
-    left: 200px;
+    max-width: 70px; 
+    min-width: 150px;  
+    display: block;
 }
 
-@media (max-width: 1880px) {
+@media (max-width: 1305px) {
     .slideshow-container-2 > img {
-        position: relative;
-        max-width: 100%;
-        margin: auto;
-        overflow: hidden;
-        flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
-    
-        height: auto;
-        max-width: 170px;  /* Tamanho máximo de 500px */
-        top: 39px;
-        left: 390px;
+    position: relative;
+    left: 120px;
+    top: 41px;
     }
-
 }
 
-@media (max-width: 1680px) {
+@media (max-width: 1245px) {
     .slideshow-container-2 > img {
-        position: relative;
-        max-width: 100%;
-        margin: auto;
-        overflow: hidden;
-        flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
-    
-        height: auto;
-        max-width: 170px;  /* Tamanho máximo de 500px */
-        top: 39px;
-        left: 200px;
+    position: relative;
+    left: 120px;
+    top: 41px;
+    display: none;
     }
-    }
-
 }
 
+@media (max-width: 1100px) {
+    .slideshow-container-2 > img {
+        display: none;
+    }
+}
 
 @media (max-width: 610px) {
     #menu-router {
@@ -300,7 +296,7 @@ div > .paragraph-4 {
     }
 
     .mySlides > img {
-        max-width: 450px;
+        max-width: 400px;
         min-width: 100px;
     }
 
@@ -308,7 +304,17 @@ div > .paragraph-4 {
         display: none;
     }
 
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
+        max-width: 400px;
+        min-width: 200px;
+    }
+
 }
+
 
 
 
