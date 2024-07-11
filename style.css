@@ -22,7 +22,7 @@ nav {
 
 nav > a > img { 
     display: inline-block;
-    height: 3vh;
+    height: 4vh;
     position: absolute;
     left: 5%;
     top: 27%;
@@ -175,6 +175,7 @@ div > .paragraph-4 {
 /**/
 
 #menu-router {
+    height: 45vh;
     display: flex;
     justify-content: center;
     background-color: #51B432;
@@ -184,6 +185,7 @@ div > .paragraph-4 {
     font-size: clamp(12px, 2vw, 14px);
     color: white;
     padding: 5px 5px;
+    margin-bottom: 20px;
     
 
 }
@@ -210,11 +212,11 @@ div > .paragraph-4 {
 
 .mySlides {
     display: none;
-    width: 100%;
+    width: 90%;
 }
 
 .mySlides > img {
-    width: 100%;
+    width: 90%;
     height: auto;
     max-width: 400px; 
     min-width: 300px;  
@@ -344,19 +346,19 @@ aside {
     font-size: clamp(13px, 2.3vw, 15px);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(45, 116, 42);
     margin-bottom: 10px;
 }
 
 div > img {
-    height: 35px;
+    height: 30px;
     position: relative;
 }
 
 div > .sub-tittle-vantagens {
-    color: rgb(8, 66, 12);
+    color: rgb(20, 95, 25);
     font-weight: 500;
-    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 #menu-vantagens {
@@ -371,7 +373,7 @@ div > .sub-tittle-vantagens {
 
  #menu-vantagens > div {
     width: 200px;
-    border: 1px solid rgba(0, 0, 0, 0.041);
+    border: 1px solid rgba(0, 0, 0, 0.082);
     border-radius: 5px;
     padding: 2px 0px 4px 8px;
     margin-left: 10px;
@@ -380,15 +382,20 @@ div > .sub-tittle-vantagens {
     font-size: clamp(12px, 2vw, 14px);
 }
 
+#menu-vantagens > div:hover {
+    background-color: #50b43215;
+}
+
+
 /*Abaixo são os estilos da área footer*/
 footer {
     margin:0px;
-    padding: 3px 0px 4px 0px;
+    padding: 2px 0px 2px 0px;
     background: #000000da;
     background-size: cover;
     box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.356);
 
-    font-size: 12px;
+    font-size: clamp(9px, 2vw, 12px);
     font-family: Arial, Helvetica, sans-serif;  
     text-align: center;
     color: rgb(255, 255, 255);
@@ -396,7 +403,7 @@ footer {
 }
 
 footer > a > img { 
-    width: 70px;
+    width: 60px;
     padding-bottom: 2px;
 }
 
