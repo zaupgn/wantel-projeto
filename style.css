@@ -13,7 +13,7 @@
 /*Abaixo são os estilos da área header*/
 nav {
     display: inline-block;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(255, 0, 0, 0);
     padding: 3px 0px 0px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.116);
     position: absolute;
@@ -33,9 +33,6 @@ nav > a > img {
 #cabeçalho {
     height: 40vh;
     background-color: #51B432;
-    background-position: right bottom;
-    background-size: cover;
-    background-attachment: fixed;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     margin-bottom: 20px;
 }
@@ -186,8 +183,6 @@ div > .paragraph-4 {
     color: white;
     padding: 5px 5px;
     margin-bottom: 20px;
-    
-
 }
 
 .container {
@@ -253,7 +248,7 @@ div > .paragraph-4 {
     overflow: hidden;
     flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
     left: 150px;
-    top: 41px;
+    top: 16px;
 
     display: none;
     width: 100%;
@@ -340,6 +335,7 @@ div > .paragraph-4 {
 /*Abaixo são os estilos da área aside*/
 aside {
     display: ;
+    background-image: linear-gradient();
 }
 
 .tittle-vantagens {
@@ -385,6 +381,42 @@ div > .sub-tittle-vantagens {
 #menu-vantagens > div:hover {
     background-color: #50b43215;
 }
+/**/
+/**/
+
+aside#banner {
+    height: 40vh;
+    background-color: #51B432;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Abaixo são os estilos da área footer*/
@@ -395,7 +427,7 @@ footer {
     background-size: cover;
     box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.356);
 
-    font-size: clamp(9px, 2vw, 12px);
+    font-size: clamp(7px, 2vw, 9px);
     font-family: Arial, Helvetica, sans-serif;  
     text-align: center;
     color: rgb(255, 255, 255);
