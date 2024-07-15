@@ -50,8 +50,7 @@ nav > a > img {
         background: rgba(0, 0, 0, 0);
         padding: 3px 0px 0px 20px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-        position: absolute;
-        
+        position: absolute; 
     }
     
     nav > a > img { 
@@ -61,7 +60,7 @@ nav > a > img {
         left: 5%;
         top: 27%;
         padding: 3px 110px 3px 20px;
-        border-bottom: 0.5px solid rgba(0, 0, 0, 0.192);
+        border-bottom: 0.5px solid #00000031;
     }
     
     #cabeçalho {
@@ -81,6 +80,22 @@ nav > a > img {
         top: 5%;
     }
 }
+
+@media (max-height: 388px) {
+    #cabeçalho {
+        height: 150px;
+    }
+
+    #cabeçalho > img {
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+    }
+
+}
+
+
 /**/
 
 /*Abaixo são os estilos da área main > section-planos*/
@@ -172,16 +187,20 @@ div > .paragraph-4 {
 /**/
 
 #menu-router {
-    height: 45vh;
+    height: 47vh;
+    width: auto;
     display: flex;
     justify-content: center;
+
     background-color: #51B432;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.137);
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
     color: white;
-    padding: 5px 5px;
+    
+    padding: 5px 0px 0px 0px;
     margin-bottom: 20px;
 }
 
@@ -202,7 +221,6 @@ div > .paragraph-4 {
     margin: auto;
     overflow: hidden;
     flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
-
 }
 
 .mySlides {
@@ -224,20 +242,20 @@ div > .paragraph-4 {
     flex-direction: column;
     justify-content: center;
     flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
-    max-width: 400px;
+    max-width: 0px;
     min-width: 300px;
 }
 
 .text-container > .sub-tittle-router {
-    background-color: rgba(0, 0, 0, 0.082);
+    background-color: rgba(0, 0, 0, 0.103);
     font-weight: bolder;
     border-radius: 5px;
-    padding: 4px 10px;
+    padding: 5px 5px;
     max-width: 370px;
 }
 
 .text-container > p {
-    padding: 5px 3px; 
+    padding-top: 10px; 
     text-align: left;     
 }
 
@@ -264,7 +282,13 @@ div > .paragraph-4 {
     .slideshow-container-2 > img {
     position: relative;
     left: 120px;
-    top: 41px;
+    top: 17px;
+    }
+}
+
+@media (max-height: 651px) {
+    #menu-router {
+        height: 300px;
     }
 }
 
@@ -277,24 +301,33 @@ div > .paragraph-4 {
     }
 }
 
-@media (max-width: 1100px) {
-    .slideshow-container-2 > img {
-        display: none;
-    }
-}
-
-@media (max-width: 610px) {
+@media (max-width: 670px) {
     #menu-router {
+        height: auto;
         display: block;
+        justify-content: center;
+    
+        background-color: #51B432;
+        box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
+        box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.137);
+    
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(12px, 2vw, 14px);
+        color: white;
+
+        margin-bottom: 20px;
     }
     
     .container {
         flex-direction: column; /* Alinhar os elementos em coluna para telas menores */
-    }
+    }   
 
     .mySlides > img {
         max-width: 400px;
         min-width: 100px;
+        position: relative;
+        left: 20px;
+
     }
 
     .slideshow-container-2 > img {
@@ -306,13 +339,35 @@ div > .paragraph-4 {
         flex-direction: column;
         justify-content: center;
         flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
-        max-width: 400px;
-        min-width: 200px;
-    }
 
+    }
 }
 
+@media (max-width: 670px) {
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
+        max-width: 0px;
+        min-width: 250px;
+    }
+    
+    .text-container > .sub-tittle-router {
+        background-color: rgba(0, 0, 0, 0.103);
+        font-weight: bolder;
+        border-radius: 5px;
+        padding: 5px 5px;
+        max-width: 250px;
+    }
+    
+    .text-container > p {
+        padding-top: 10px; 
+        text-align: left;     
+    }
 
+
+}
 
 
 
@@ -383,41 +438,6 @@ div > .sub-tittle-vantagens {
 }
 /**/
 /**/
-
-aside#banner {
-    height: 40vh;
-    background-color: #51B432;
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Abaixo são os estilos da área footer*/
 footer {
