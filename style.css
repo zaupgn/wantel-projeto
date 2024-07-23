@@ -21,7 +21,7 @@ nav {
 
 nav > a > img { 
     display: inline-block;
-    height: 3.5vh;
+    height: 3.8vh;
     position: absolute;
     left: 5%;
     top: 27%;
@@ -30,17 +30,17 @@ nav > a > img {
 }
 
 #cabeçalho {
-    height: 30vh;
+    height: 40vh;
     background-color: #2b631a;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     margin-bottom: 20px;
 }
 
 #cabeçalho > img {
-    height: 30vh;
+    height: 39vh;
     position: absolute;
     left: 50%;
-    top: 0%;
+    top: 1%;
     filter: drop-shadow(2px 0px 0px rgb(183, 253, 117));
 }
 
@@ -63,19 +63,33 @@ nav > a > img {
     flex-direction: rom;
     flex-wrap: wrap;
     margin-bottom: 20px;
+
 }
 
 #menu-planos > div {
     width: 210px;
     height: 400px;
-    border: 1px solid rgba(0, 0, 0, 0.212);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 2px;
-    
     padding: 2px 8px 4px 8px;
     margin-left: 10px;
 }
 
+.economico {
+    background-image: url(image/img6a.png);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.familiar {
+    background-image: url(image/img6.png);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+
 div > .sub-tittle-planos {
+    display: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
     text-align: center;
@@ -84,6 +98,7 @@ div > .sub-tittle-planos {
 }
 
 div > p.paragraph-1, p.paragraph-2, p.paragraph-3, p.paragraph-4, .sub-tittle-planos {
+    display: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
     color: rgb(0, 0, 0);
@@ -91,20 +106,26 @@ div > p.paragraph-1, p.paragraph-2, p.paragraph-3, p.paragraph-4, .sub-tittle-pl
 
 .valores {
     margin: 0px;
+    color:rgb(0, 0, 0);
+    position: relative;
+    left: 15%;
+    display: none;
 }
 .v1 {
     font-family: 'font1';
-    font-size: clamp(30px, 2.3vw, 15px);
-    color: rgb(0, 0, 0);
+    font-size: clamp(20px, 2.3vw, 15px);
 }
 .v2 {
     font-family: 'font1';
     font-size: clamp(4em, 2.3vw, 15px);
-    color: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    filter: drop-shadow(3px 0px 0px rgb(183, 253, 117));
+    font-weight: bolder;
+
 }
 .v3 {
     font-family: 'font1';
-    font-size: clamp(1em, 2.3vw, 15px);
+    font-size: clamp(20px, 2.3vw, 15px);
 }
 
 div > .paragraph-1 {
@@ -121,23 +142,19 @@ div > .paragraph-4 {
 }
 
 .bottom a {
-    border: 1px solid rgba(0, 0, 0, 0.281);
-    border-radius: 5px;
+    display: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     padding: 5px 0px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(12px, 2vw, 14px);
-    color: rgba(0, 0, 0, 0.452);
+    color: rgba(0, 0, 0, 0.979);
 }
 
-.bottom:hover {
-    transform: rotateX(360deg);
-    transition: 2s;
-}
-/**/
-/**/
+
 
 #menu-router {
     display: flex;
@@ -220,14 +237,29 @@ div > .paragraph-4 {
 
 @media (max-width: 1647px) {
     .slideshow-container-2 > img {
-        display: none;
+        height: 280px;
+        width: auto;
+        position: relative;
+        left: 130%;
+        filter: drop-shadow(6px 0px 0px rgb(183, 253, 117));
     }
 }
-@media (max-width: 1245px) {
+@media (max-width: 1320px) {
+    .slideshow-container-2 > img {
+        height: 280px;
+        width: auto;
+        position: relative;
+        left: 110%;
+        filter: drop-shadow(6px 0px 0px rgb(183, 253, 117));
+    }
+}
+
+@media (max-width: 1250px) {
     .slideshow-container-2 > img {
         display: none;
     }
 }
+
 @media (max-width: 670px) {
     #menu-router {
         height: auto;
@@ -349,7 +381,7 @@ div > .sub-tittle-vantagens {
 /*Abaixo são os estilos da área footer*/
 footer {
     margin:0px;
-    padding: 2px 0px 2px 0px;
+    padding: 5px 0px 5px 0px;
     background: #000000da;
     background-size: cover;
     box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.356);
