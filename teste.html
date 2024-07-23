@@ -3,144 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slideshow Responsivo</title>
+    <title>Document</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Altura da janela de visualização */
-            margin: 0;
 
-        }
+.responsiva-div {
+    width: 100%; /* Ocupa 100% da largura do contêiner pai */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    background-color: #f0f0f0; /* Cor de fundo para visibilidade */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Posicionamento relativo para o filho absoluto */
+}
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            margin: 0px;
-            flex-wrap: nowrap;
-            gap: 10px; /* Espaço entre os elementos */
-            background-color: blueviolet;
-            padding: 5px
+.imagem-bottom {
 
-            
-        }
+    width: 20%; /* A imagem é responsiva e ocupa toda a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    position: absolute; /* Posicionamento absoluto dentro da div */
+    bottom: 0; /* Alinha a imagem na parte inferior da div */
+    left: 9; /* Alinha a imagem à esquerda da div */
+}
 
-        .slideshow-container {
-            position: relative;
-            max-width: 100%;
-            margin: auto;
-            overflow: hidden;
-            flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
-        }
+@media (min-width: 600px) {
+    .responsiva-div {
+        padding: 30px;
+    }
+}
 
-        .mySlides {
-            display: none;
-            width: 100%;
-        }
+@media (min-width: 900px) {
+    .responsiva-div {
+        padding: 40px;
+    }
+}
 
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 500px;  /* Tamanho máximo de 500px */
-            min-width: 300px;  /* Tamanho mínimo de 300px */
-            display: block;
-
-        }
-
-        .text-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
-            max-width: 500px;
-            min-width: 300px;
-            
-
-        }
-
-        .text-container p {
-            margin: 5px 0; /* Reduzir a margem entre os parágrafos */
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: clamp(12px, 2vw, 14px);
-            text-align: justify;            
-        
-            
-        }
-
-        @media (max-width: 610px) {
-            .container {
-                flex-direction: column; /* Alinhar os elementos em coluna para telas menores */
-                align-items: center;
-                padding: 5px auto;
-
-            }
-
-            .text-container {
-                max-width: 450px;
-                min-width: 200px;
-                justify-content: center;
-                margin: auto;
-            }
-
-            .text-container p {
-
-            padding: 10px 5px; 
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: clamp(12px, 2vw, 14px);
-            text-align: justify;   
-            }
-
-            img {
-                max-width: 450px;
-                min-width: 200px;
-            }
-        }
 
 
     </style>
+
+
 </head>
-<body>
+<body>  
 
-<div class="container">
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <img src="image/img11.png" alt="Imagem 1">
-        </div>
-        <div class="mySlides">
-            <img src="image/img11b.png" alt="Imagem 2">
-        </div>
+    <div class="responsiva-div">
+        <p>Conteúdo da Div Responsiva</p>
+        <img src="image/img5.png" alt="Imagem Responsiva" class="imagem-bottom">
     </div>
-    <div class="text-container">
-        <p>Velocidades de Wi-Fi de 1,8 Gbps: Aproveite uma navegação, streaming e download mais rápidos em duas bandas.*</p>
-        <p>Mais Conexões: As tecnologias OFDMA e MU-MIMO aumentam a capacidade e permitem a transmissão simultânea para mais dispositivos.**</p>
-        <p>Cobertura Estendida: Antenas de alto desempenho e tecnologia de formação de feixes se combinam para fornecer recepção focada a dispositivos distantes.</p>
-        <p>Conexões com Fio Gigabit: 1 porta Gigabit WAN e 3 portas Gigabit LAN fornecem acesso à internet rápido e flexível.</p>
-    </div>
-</div>
-
-<script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); // Muda de imagem a cada 3 segundos
-    }
-</script>
-
+    
+    
 </body>
 </html>

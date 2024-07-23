@@ -2,7 +2,6 @@
 @font-face {
     font-family:'font1';
     src:url(font/Poppins-Light.ttf) format(truetype);
-
 }
 
 * {
@@ -22,7 +21,7 @@ nav {
 
 nav > a > img { 
     display: inline-block;
-    height: 4vh;
+    height: 3.5vh;
     position: absolute;
     left: 5%;
     top: 27%;
@@ -31,68 +30,18 @@ nav > a > img {
 }
 
 #cabeçalho {
-    height: 40vh;
+    height: 30vh;
     background-color: #2b631a;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     margin-bottom: 20px;
 }
 
 #cabeçalho > img {
-    height: 35vh;
+    height: 30vh;
     position: absolute;
     left: 50%;
-    top: 5%;
-}
-
-@media (max-width: 610px) {
-    nav {
-        display: inline-block;
-        background: rgba(0, 0, 0, 0);
-        padding: 3px 0px 0px 20px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-        position: absolute; 
-    }
-    
-    nav > a > img { 
-        display: inline-block;
-        height: 3vh;
-        position: absolute;
-        left: 5%;
-        top: 27%;
-        padding: 3px 110px 3px 20px;
-        border-bottom: 0.5px solid #00000031;
-    }
-    
-    #cabeçalho {
-        height: 40vh;
-        background-color: #51B432;
-        background-position: right bottom;
-        background-size: cover;
-        background-attachment: fixed;
-        box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.342);
-        margin-bottom: 20px;
-    }
-    
-    #cabeçalho > img {
-        height: 34vh;
-        position: absolute;
-        left: 50%;
-        top: 5%;
-    }
-}
-
-@media (max-height: 388px) {
-    #cabeçalho {
-        height: 150px;
-    }
-
-    #cabeçalho > img {
-        height: 150px;
-        position: absolute;
-        left: 50%;
-        top: 0%;
-    }
-
+    top: 0%;
+    filter: drop-shadow(2px 0px 0px rgb(183, 253, 117));
 }
 
 
@@ -185,26 +134,17 @@ div > .paragraph-4 {
 
 .bottom:hover {
     transform: rotateX(360deg);
-    transition: 0.5s;
+    transition: 2s;
 }
 /**/
 /**/
 
 #menu-router {
-    height: 47vh;
-    width: auto;
     display: flex;
     justify-content: center;
-
     background-color: #2b631a;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.137);
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(12px, 2vw, 13px);
-    color: white;
-    
-    padding: 5px 0px 0px 0px;
     margin-bottom: 20px;
 }
 
@@ -236,9 +176,10 @@ div > .paragraph-4 {
     width: 90%;
     height: auto;
     max-width: 400px; 
-    min-width: 300px;  
+    min-width: 250px;  
     display: block;
-    padding: 0px 5px;
+    padding: 0px 0px;
+    filter: drop-shadow(1px 0px 0px rgb(255, 255, 255));
 }
 
 .text-container {
@@ -251,78 +192,53 @@ div > .paragraph-4 {
 }
 
 .text-container > .sub-tittle-router {
-    padding: 5px 0px;
     font-weight: bolder;
     border-radius: 5px;
     max-width: 370px;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vw, 13px);
+    color: white;
 }
 
 .text-container > p {
     padding-top: 10px; 
     text-align: left;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vw, 13px);
+    color: white;
 
 }
 
 .slideshow-container-2 > img {
+    height: 280px;
+    width: auto;
     position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-    flex: 1; /* Permitir que o slideshow cresça e diminua com a largura da tela */
-    left: 150px;
-    top: 15px;
-
-    display: none;
-    width: 100%;
-
-    width: 50%;
-    height: auto;
-    max-width: 70px; 
-    min-width: 150px;  
-    display: block;
-
-    filter: drop-shadow(8px 0px 0px rgb(23, 255, 2))
+    left: 220%;
+    filter: drop-shadow(6px 0px 0px rgb(183, 253, 117));
 }
 
-@media (max-width: 1305px) {
+
+@media (max-width: 1647px) {
     .slideshow-container-2 > img {
-    position: relative;
-    left: 120px;
-    top: 17px;
+        display: none;
     }
 }
-
-@media (max-height: 651px) {
-    #menu-router {
-        height: 300px;
-    }
-}
-
 @media (max-width: 1245px) {
     .slideshow-container-2 > img {
-    position: relative;
-    left: 120px;
-    top: 41px;
-    display: none;
+        display: none;
     }
 }
-
 @media (max-width: 670px) {
     #menu-router {
         height: auto;
         display: block;
         justify-content: center;
-    
-        background-color: #51B432;
         box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
         box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.137);
     
         font-family: Arial, Helvetica, sans-serif;
         font-size: clamp(12px, 2vw, 14px);
         color: white;
-
-        margin-bottom: 20px;
     }
     
     .container {
@@ -334,7 +250,6 @@ div > .paragraph-4 {
         min-width: 100px;
         position: relative;
         left: 20px;
-
     }
 
     .slideshow-container-2 > img {
@@ -346,34 +261,21 @@ div > .paragraph-4 {
         flex-direction: column;
         justify-content: center;
         flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
-
-    }
-}
-
-@media (max-width: 670px) {
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1; /* Permitir que o container de texto cresça e diminua com a largura da tela */
         max-width: 0px;
         min-width: 250px;
     }
-    
+
     .text-container > .sub-tittle-router {
-        background-color: rgba(0, 0, 0, 0.103);
         font-weight: bolder;
         border-radius: 5px;
         padding: 5px 5px;
         max-width: 250px;
     }
-    
+
     .text-container > p {
         padding-top: 10px; 
         text-align: left;     
     }
-
-
 }
 
 
@@ -443,8 +345,6 @@ div > .sub-tittle-vantagens {
 #menu-vantagens > div:hover {
     background-color: #50b43215;
 }
-/**/
-/**/
 
 /*Abaixo são os estilos da área footer*/
 footer {
@@ -464,6 +364,12 @@ footer {
 footer > a > img { 
     width: 70px;
     padding-bottom: 2px;
+
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white
 }
 
 
