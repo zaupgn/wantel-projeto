@@ -18,7 +18,7 @@ nav {
 }
 
 nav > a > img { 
-    height: 1000%;
+    height: 900%;
     display: inline-block;
     position: absolute;
     left: 5%;
@@ -28,10 +28,10 @@ nav > a > img {
 }
 
 #cabeçalho {
-    height: 300px;
-    background-color: #2b631a;
+    height: 280px;
+    background-color: #569c41;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -44,12 +44,19 @@ nav > a > img {
     filter: drop-shadow(2px 0px 0px rgb(183, 253, 117));
 }
 
+@media (max-width: 430px) {
+    #cabeçalho > img {
+        left: 20%;
+    }
+}
+
+
 #menu-planos {
     display: flex;
     justify-content: center;
     flex-direction: rom;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #menu-planos > div {
@@ -142,12 +149,13 @@ div > .paragraph-4 {
 #menu-router {
     display: flex;
     justify-content: center;
-    background-color: #2b631a;
+    background-color: #569c41;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.137);
     padding: 5px 0px;
     margin-bottom: 20px;
     position: relative;
+    
 }
 
 .container {
@@ -218,16 +226,23 @@ div > .paragraph-4 {
     display: inline-block;
     position: relative;
     left: 58%;
-    top: 1.5%;
+    top: 1.8%;
+    opacity: 0.4;
     filter: drop-shadow(6px 0px 0px rgb(183, 253, 117));
 }
 
-@media (max-width: 1918px){
+@media (max-width: 1366px){
+    .container > img {
+        position: relative;
+        left: 25%;
+    }
+}
+
+@media (max-width: 1365px){
     .container > img {
         display: none;
     }
 }
-
 
 @media (max-width: 670px) {
     #menu-router {
@@ -279,12 +294,16 @@ div > .paragraph-4 {
     }
 }
 
-aside {
-    display: none;
+#espaço {
+    height: 300px;
+}
+
+aside { display: none;
     background-image: linear-gradient();
 }
 
 .tittle-vantagens {
+    display: none;
     font-size: clamp(13px, 2.3vw, 15px);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -293,6 +312,7 @@ aside {
 }
 
 div > img {
+    display: none;
     height: 30px;
     position: relative;
 }
