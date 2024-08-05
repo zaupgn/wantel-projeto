@@ -8,7 +8,6 @@
     margin: 0px;
 }
 
-
 nav {
     display: inline-block;
     background: rgba(255, 0, 0, 0);
@@ -29,9 +28,9 @@ nav > a > img {
 
 #cabeçalho {
     height: 280px;
-    background-color: #569c41;
+    background-color: #3b6d2b;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -50,13 +49,11 @@ nav > a > img {
     }
 }
 
-
 #menu-planos {
     display: flex;
     justify-content: center;
     flex-direction: rom;
     flex-wrap: wrap;
-    margin-bottom: 10px;
 }
 
 #menu-planos > div {
@@ -70,25 +67,21 @@ nav > a > img {
 }
 
 .economico {
-    background-image: url(image/img6c.png);
     background-position: center bottom;
     background-size: cover;
 }
 
 .familiar {
-    background-image: url(image/img6a.png);
     background-position: center bottom;
     background-size: cover;
 }
 
 .familiarmais {
-    background-image: url(image/img6b.png);
     background-position:  center bottom;
     background-size: cover;
 }
 
 .ultravelo {
-    background-image: url(image/img6.png);
     background-position: center bottom;
     background-size: cover;
 }
@@ -126,7 +119,6 @@ div > p.paragraph-1, p.paragraph-2, p.paragraph-3, p.paragraph-4, .sub-tittle-pl
     color:rgb(0, 0, 0);
     filter: drop-shadow(3px 0px 0px rgb(183, 253, 117));
     font-weight: bolder;
-
 }
 .v3 {
     font-family: 'font1';
@@ -149,13 +141,11 @@ div > .paragraph-4 {
 #menu-router {
     display: flex;
     justify-content: center;
-    background-color: #569c41;
+    background-color: #3b6d2b;
     box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.137);
     box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.137);
     padding: 5px 0px;
-    margin-bottom: 20px;
     position: relative;
-    
 }
 
 .container {
@@ -294,11 +284,7 @@ div > .paragraph-4 {
     }
 }
 
-#espaço {
-    height: 300px;
-}
-
-aside { display: none;
+aside {
     background-image: linear-gradient();
 }
 
@@ -312,18 +298,19 @@ aside { display: none;
 }
 
 div > img {
-    display: none;
-    height: 30px;
+    height: 25px;
     position: relative;
 }
 
 div > .sub-tittle-vantagens {
+    display: none;
     color: rgb(20, 95, 25);
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 #menu-vantagens {
+    display: none;
     display: flex;
     justify-content: center;
     flex-direction: rom;
@@ -334,6 +321,7 @@ div > .sub-tittle-vantagens {
 }
 
  #menu-vantagens > div {
+    display: none;
     width: 200px;
     border: 1px solid rgba(0, 0, 0, 0.082);
     border-radius: 5px;
